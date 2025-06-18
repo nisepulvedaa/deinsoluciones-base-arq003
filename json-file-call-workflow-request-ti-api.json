@@ -1,0 +1,6 @@
+{
+    "cfg_wf": "workflow-arquetipo-request-to-api",
+    "cfg_proc": "process-{{nombre_proceso}}",
+    "url_function":"https://us-east4-deinsoluciones-serverless.cloudfunctions.net/fn-request-to-api",
+    "ei_flag": "0"
+}
