@@ -1,0 +1,10 @@
+nombre_proceso="" #nombre-proceso
+periodicidad=""# diario|mensual|esporadico
+buckets_path_name="gs://dev-deinsoluciones-ingestas/origin-files/" # 
+buckets_file_name_1="" 
+buckets_file_name_2="" 
+vars_1=""
+vars_2=""
+url_api_1=""
+url_api_2=""
+correos_destinatarios=""

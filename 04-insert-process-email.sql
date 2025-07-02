@@ -11,15 +11,14 @@ INSERT INTO `dev_config_zone.process_email` (
         "email_to_0": "{{correos_destinatarios}}",
         "email_subj_err": "Resultado Ejecución Proceso: process-{{nombre_proceso}} [ERROR]", 
         "email_subj_ok": "Resultado Ejecución Proceso: process-{{nombre_proceso}} [OK]", 
-        "email_body_err": "Proces : process-{{nombre_proceso}} de Arquetipo: workflow-arquetipo-request-to-api Ejecutado Con Errores!", 
-        "email_body_ok": "Proces : process-{{nombre_proceso}} de Arquetipo: workflow-arquetipo-request-to-api Ejecutado Ok!"
+        "email_body_err": "Process : process-{{nombre_proceso}} de Arquetipo: workflow-arquetipo-request-to-api Ejecutado Con Errores!", 
+        "email_body_ok": "Process : process-{{nombre_proceso}} de Arquetipo: workflow-arquetipo-request-to-api Ejecutado Ok!"
         }
     ]
     ''',
     'ORIGIN',
     1
 );
-
 ----
 SELECT
     process_name,

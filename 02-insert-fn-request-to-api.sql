@@ -9,13 +9,14 @@ INSERT INTO `dev_config_zone.process_params` (
     'fn-request-to-api',
     JSON '''
     [
-        {"url": "{{url_api}}","filename": "{{nombre_archivo}}.parquet","vars": "codigo;nombre;serie.fecha;serie.valor"},
-        {"url": "{{url_api}}","filename": "{{nombre_archivo}}.parquet","vars": "codigo;nombre;serie.fecha;serie.valor"}
+        {"url": "{{url_api}}","filename": "{{buckets_file_name_1}}","vars": "{{vars_1}}"},
+        {"url": "{{url_api}}","filename": "{{buckets_file_name_2}}","vars": "{{vars_1}}"}
     ]
     ''',
     'workflow-arquetipo-request-to-api',
     TRUE
 );
+
 
 ----
 SELECT

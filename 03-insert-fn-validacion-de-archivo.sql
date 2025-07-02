@@ -9,15 +9,13 @@ INSERT INTO `dev_config_zone.process_params` (
     'fn-validacion-de-archivo-gcs',
     JSON '''
     [
-        {"path_name": "origin-files/{{path_destino}}/{{nombre_archivo1}}.parquet", "periodicidad": "{{periodicidad}}"},
-        {"path_name": "origin-files/{{path_destino}}/{{nombre_archivo2}}.parquet", "periodicidad": "{{periodicidad}}"},
+        {"path_name": "origin-files/{{buckets_file_name_1}}", "periodicidad": "{{periodicidad}}"},
+        {"path_name": "origin-files/{{buckets_file_name_2}}", "periodicidad": "{{periodicidad}}"},
     ]
     ''',
     'workflow-arquetipo-request-to-api',
     TRUE
 );
-
-
 ----
 SELECT
     process_name,
